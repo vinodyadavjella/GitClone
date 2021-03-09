@@ -9,6 +9,15 @@ export const getGitUser_ById = async (id: any): Promise<UserData> => {
     }
 }
 
+export const repoList = async (id: any): Promise<Record<string, string>> => {
+    try {
+        const result = await axios.get(`https://api.github.com/users/${id}/repos`)
+        return result.data as unknown as Record<string, string>
+    } catch (e) {
+        throw new Error(e)
+    }
+}
+
 export interface UserData {
     login: string;
     id: number;

@@ -9,6 +9,9 @@ const BodyContent = () => {
         <BodyWrapper>
             <Home />
             <BodySider />
+            <div>
+                vinod
+            </div>
         </BodyWrapper>
     )
 }
@@ -16,5 +19,6 @@ const BodyContent = () => {
 export default BodyContent
 
 const BodyWrapper = styled.div`
+display:flex;
 
 `;
