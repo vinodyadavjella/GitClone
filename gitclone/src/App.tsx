@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Page from './components/page/Page';
 import Home from './components/home/Home';
 import Header from './components/home/Header';
@@ -11,18 +11,19 @@ function App() {
     <Apps>
       <Header />
       <Switch>
-        <Route exact path="/">
+        <Route path="/home">
           <Home />
         </Route>
-        <Route exact path="/team">
+        <Route path="/team">
           <Page title="Team" />
         </Route>
-        <Route exact path="/projects">
+        <Route path="/projects">
           <Page title="Projects" />
         </Route>
         <Route path='/calendar'>
           <Page title="Calendar" />
         </Route>
+        <Redirect to="/home/overview" />
       </Switch>
     </Apps>
   );

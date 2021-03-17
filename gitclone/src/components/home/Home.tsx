@@ -11,13 +11,13 @@ const Home = () => {
             <HomeWrapper>
                 <Dashboard />
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path="/home/overview">
                         Overview
                     </Route>
-                    <Route path="/new-user">
+                    <Route path="/home/new-user">
                         New User
                     </Route>
-                    <Route path="/sales">
+                    <Route path="/home/sales">
                         Sales
                     </Route>
                 </Switch>

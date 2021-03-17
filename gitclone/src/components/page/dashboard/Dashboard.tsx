@@ -22,7 +22,7 @@ const Dashboard = () => {
                         <div style={{ border: "1px dashed rgba(107, 114, 128, 1)", height: "96px" }}>
                             <TopNavWrapper>
                                 <NavLink
-                                    to="/"
+                                    to="/home/overview"
                                     className="baseStyle"
                                     activeClassName="activeStyle"
                                     inactiveClassName="inactiveStyle"
@@ -30,7 +30,7 @@ const Dashboard = () => {
                                     Overview
                             </NavLink>
                                 <NavLink
-                                    to="/new-user"
+                                    to="/home/new-user"
                                     className="baseStyle"
                                     activeClassName="activeStyle"
                                     inactiveClassName="inactiveStyle"
@@ -38,7 +38,7 @@ const Dashboard = () => {
                                     New User
                             </NavLink>
                                 <NavLink
-                                    to="/sales"
+                                    to="/home/sales"
                                     className="baseStyle"
                                     activeClassName="activeStyle"
                                     inactiveClassName="inactiveStyle"
