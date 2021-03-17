@@ -1,0 +1,14 @@
+.activeStyle {
+    border-color: indigo;
+     color: lightgray; 
+}
+
+.inactiveStyle {
+    color: lightgray;
+}
+
+.baseStyle{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem;
+}
